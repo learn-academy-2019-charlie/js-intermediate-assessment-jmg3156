@@ -3,10 +3,14 @@
 ### Without using Google answer the following:
 
 1. What is the difference between .map() and .filter()?
+.map() Does something to every item in the array and returns the same length/size of array
+.filter() Filters array based pm conditions you set, returns a specific index and smaller array
 
 2. Why would you use object destructuring?
+Makes code concise
 
 3. What is the difference between var, let, and const?
+
 
 4. Why is testing important?
 
