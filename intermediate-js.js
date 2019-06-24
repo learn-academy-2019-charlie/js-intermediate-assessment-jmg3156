@@ -26,16 +26,21 @@ console.log(bicycle.type)
 console.log(bicycle.gear[2])
 
 // Log the PSI:
-console.log(bicycle.specs[2])
+console.log(bicycle.wheels.specs[2])
 
 
 // 3. Write a function called letterCounter that logs the number of times the letter "l" appears in ourString.
 
 var ourString = "Hello Learn Students!"
 
-const letterCounter = (str) => {
-	
+var array = ourString.toLowerCase().split("")
+
+letterCounter = (array1, value) => {
+    return.array.filter((v) => (v === value)).length
 }
+console.log(letterCounter(array, "l"))
+
+
 
 
 // 4. Write a function called getFib that returns the first 10 numbers of the Fibonacci sequence in an array. [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
@@ -60,13 +65,14 @@ var getFib = function (n)
 
 var fullArr = [4, 9, 0, "7", 8, true, "hey", 7, 199, -9, false, "hola"]
 const onlyOdd = (arr) => {
-    var newArr = []
-    for(let i=0; i<arr.length; i++){
-        if(arr[i] % 2 != 0){
-            newArr.push(arr[i])
-        }
+    var newArr = fullArr.filter (v) => {
+   if  (typeof (v)  === "number") {
+       return (parseInt (v, 10) % 2 === 1)
+   }
+        
+        
     }
     return newArr
 }
 
-console.log(onlyOdd(fullArr));
+console.log(onlyOdd());
